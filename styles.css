@@ -1,0 +1,35 @@
+li{
+    background-color:aliceblue;
+}
+
+li:hover{
+    background-color: yellow;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+li:active{
+    background-color: lightgreen;
+    font-style: italic;
+}
+
+li:before{
+    content: "✅";
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+li:hover::after{
+    content: "Pick me!!! Pick me!!!";
+    background-color: pink;
+    margin-left: 5px;
+}
+
+li:active::before{
+    content: ✅;
+}
+
+li:active::after{
+    content: "Yay!! 😁";
+    background-color: lightgreen;
+}
